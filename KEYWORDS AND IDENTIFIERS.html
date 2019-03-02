@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>KEYWORDS AND IDENTIFIERS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+div {
+    width: 99%;
+    border: 1px solid black;
+    margin: 2px;
+    font-size: 9px;
+    /* 100 = viewport width, as 1vw = 1/100th of that
+       Here, the body is 150% of viewport, but the container is 50% 
+       of viewport, so both parents factor  into how you want it to size.
+       Let's say you like 5vw if it were the whole width,
+       then for this container, size it at 3.75vw 
+       (5 * 1.5 [i.e. 150%]) * .5 [i.e. 50%]
+    */
+    font-size: 0.75vw; 
+}
+</style>
+
+
+</head><b>
+<body style="background-color:white;">
+
+<div class="w3-container">
+  <h2>KEYWORDS AND IDENTIFIERS</h2>
+  
+</div>
+
+<div class="w3-cell-row">
+  <div class="w3-container  w3-cell w3-mobile">
+    <p>C has several types of variables, but there are a few basic types:</br>
+Integers - whole numbers which can be either positive or negative. Defined using char, int, short, long or long long.</br>
+Unsigned integers - whole numbers which can only be positive. Defined using unsigned char, unsigned int, unsigned short, unsigned long or unsigned long long.<br>
+Floating point numbers - real numbers (numbers with fractions). Defined using float and double.</br>
+Structures - will be explained later, in the Structures section.</p>
+ <table class="w3-table w3-bordered">
+    <tr>
+      <th>DATA TYPE</th>
+      <th>SIZE</th>
+	  <th>RANGE</th>
+      
+    </tr>
+    <tr>
+      <td>char</td>
+      <td>1 byte</td>
+      <td>-128 to 127 or 0 to 255</td>
+    </tr>
+	<tr>
+      <td>int</td>
+      <td>2 or 4 bytes</td>
+      <td>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647</td>
+    </tr>
+     <tr>
+      <td>float</td>
+      <td>4 bytes</td>
+      <td>1.2E-38 to 3.4E+38</td>
+    </tr>
+	 <tr>
+      <td>double</td>
+      <td>8 bytes</td>
+      <td>2.3E-308 to 1.7E+308</td>
+    </tr>
+
+</p>
+  </div>
+  <div class="w3-container w3-green w3-cell w3-mobile">
+    <p>In 'C' every word can be either a keyword or an identifier.
+
+Keywords have fixed meanings, and the meaning cannot be changed. </br>They act as a building block of a 'C' program. There are total 32 keywords in 'C'. Keywords are written in lowercase letters.
+
+Following table represents the keywords in 'C',
+
+<table class="w3-table w3-borderd">
+<tr>
+<tr>td>auto	double	int	struct</td></tr>
+<tr><td>break	else	long	switch</td></tr>
+<tr><td>case	enum	register	typedef</td></tr>
+<tr><td>char	extern	return	union</td></tr>
+<tr><td>const	short	float	unsigned</td></tr>
+<tr><td>continue	for	signed	void</td></tr>
+<tr><td>default	goto	sizeof	volatile</td></tr>
+<tr><td>do	if	static	while</td></tr>
+
+An identifier is nothing but a name assigned to an element in a program. Example, name of a variable, function, etc. Identifiers are the user-defined names consisting of 'C' standard character set. As the name says, identifiers are used to identify a particular element in a program. Each identifier must have a unique name. Following rules must be followed for identifiers</p>
+  </div>
+  <div class="w3-container w3-blue w3-cell w3-mobile">
+    <p>
+	IDENTIFIERS NAMING RULES
+►The first character must always be an alphabet or an underscore.
+►It should be formed using only letters, numbers, or underscore.
+►A keyword cannot be used as an identifier.
+►It should not contain any whitespace character.
+►The name must be meaningful.</p>
+  </div>
+</div>
+<p>
+What is a Variable?
+A variable is an identifier which is used to store some value. Constants can never change at the time of execution. Variables can change during the execution of a program and update the value stored inside it.
+
+A single variable can be used at multiple locations in a program. A variable name must be meaningful. It should represent the purpose of the variable.
+
+Example: Height, age, are the meaningful variables that represent the purpose it is being used for. Height variable can be used to store a height value. Age variable can be used to store the age of a person
+A variable must be declared first before it is used somewhere inside the program. A variable name is formed using characters, digits and an underscore.
+
+Following are the rules that must be followed while creating a variable:
+
+A variable name should consist of only characters, digits and an underscore.
+A variable name should not begin with a number.
+A variable name should not consist of whitespace.
+A variable name should not consist of a keyword.
+'C' is not a case sensitive language that means a variable named 'age' and 'AGE' are different.
+Following are the examples of valid variable names in a 'C' program:
+
+height or HEIGHT
+_height
+_height1
+My_name
+Following are the examples of invalid variable names in a 'C' program:
+
+1height
+Hei$ght
+My name
+For example, we declare an integer variable my_variable and assign it the value 48:
+
+int my_variable;
+my_variable = 48;
+By the way, we can both declare and initialize (assign an initial value) a variable in a single statement:
+
+int my_variable = 48;
+Data types
+'C' provides various data types to make it easy for a programmer to select a suitable data type as per the requirements of an application. Following are the three data types:
+
+Primitive data types
+Derived data types
+User-defined data types
+There are five primary fundamental data types,
+
+int for integer data
+char for character data
+float for floating point numbers
+double for double precision floating point numbers
+void
+Array, functions, pointers, structures are derived data types. 'C' language provides more extended versions of the above mentioned primary data types. Each data type differs from one another in size and range. Following table displays the size and range of each data type.
+
+Data type	Size in bytes	Range
+Char or signed char	1	-128 to 127
+Unsigned char	1	0 to 255
+int or signed int	2	-32768 to 32767
+Unsigned int	2	0 to 65535
+Short int or Unsigned short int	2	0 to 255
+Signed short int	2	-128 to 127
+Long int or Signed long int	4	-2147483648 to 2147483647
+Unsigned long int	4	0 to 4294967295
+float	4	3.4E-38 to 3.4E+38
+double	8	1.7E-308 to 1.7E+308
+Long double	10	3.4E-4932 to 1.1E+4932
+Note: In C, there is no Boolean data type.
+
+Integer data type
+Integer is nothing but a whole number. The range for an integer data type varies from machine to machine. The standard range for an integer data type is -32768 to 32767.
+
+An integer typically is of 2 bytes which means it consumes a total of 16 bits in memory. A single integer value takes 2 bytes of memory. An integer data type is further divided into other data types such as short int, int, and long int.
+
+Each data type differs in range even though it belongs to the integer data type family. The size may not change for each data type of integer family.
+
+The short int is mostly used for storing small numbers, int is used for storing averagely sized integer values, and long int is used for storing large integer values.
+
+Whenever we want to use an integer data type, we have place int before the identifier such as,
+
+int age;
+Here, age is a variable of an integer data type which can be used to store integer values.
+
+Floating point data type
+Like integers, in 'C' program we can also make use of floating point data types. The 'float' keyword is used to represent the floating point data type. It can hold a floating point value which means a number is having a fraction and a decimal part. A floating point value is a real number that contains a decimal point. Integer data type doesn't store the decimal part hence we can use floats to store decimal part of a value.
+
+Generally, a float can hold up to 6 precision values. If the float is not sufficient, then we can make use of other data types that can hold large floating point values. The data type double and long double are used to store real numbers with precision up to 14 and 80 bits respectively.
+
+While using a floating point number a keyword float/double/long double must be placed before an identifier. The valid examples are,
+
+float division;
+double BankBalance;
+Character data type
+
+Character data types are used to store a single character value enclosed in single quotes.
+
+A character data type takes up-to 1 byte of memory space.
+
+Example,
+
+Char letter;
+Void data type
+
+A void data type doesn't contain or return any value. It is mostly used for defining functions in 'C'.
+
+Example,
+
+void displayData()
+Type declaration of a variable
+
+int main() {
+int x, y;
+float salary = 13.48;
+char letter = 'K';
+x = 25;
+y = 34;
+int z = x+y;
+printf("%d \n", z);
+printf("%f \n", salary);
+printf("%c \n", letter);
+return 0;}
+Output:
+
+59
+13.480000
+K
+We can declare multiple variables with the same data type on a single line by separating them with a comma. Also, notice the use of format specifiers in printf output function float (%f) and char (%c) and int (%d).
+
+Constants
+Constants are the fixed values that never change during the execution of a program. Following are the various types of constants:
+
+Integer constants
+
+An integer constant is nothing but a value consisting of digits or numbers. These values never change during the execution of a program. Integer constants can be octal, decimal and hexadecimal.
+
+Decimal constant contains digits from 0-9 such as,
+Example, 111, 1234
+Above are the valid decimal constants.
+
+Octal constant contains digits from 0-7, and these types of constants are always preceded by 0.
+Example, 012, 065
+Above are the valid decimal constants.
+
+Hexadecimal constant contains a digit from 0-9 as well as characters from A-F. Hexadecimal constants are always preceded by 0X.
+Example, 0X2, 0Xbcd
+Above are the valid hexadecimal constants.
+
+The octal and hexadecimal integer constants are very rarely used in programming with 'C'.
+
+Character constants
+
+A character constant contains only a single character enclosed within a single quote (''). We can also represent character constant by providing ASCII value of it.
+
+Example, 'A', '9'
+Above are the examples of valid character constants.
+
+String constants
+
+A string constant contains a sequence of characters enclosed within double quotes ("").
+
+Example, "Hello", "Programming"
+These are the examples of valid string constants.
+
+Real Constants
+
+Like integer constants that always contains an integer value. 'C' also provides real constants that contain a decimal point or a fraction value. The real constants are also called as floating point constants. The real constant contains a decimal point and a fractional value.
+
+Example, 202.15, 300.00
+These are the valid real constants in 'C'.
+
+A real constant can also be written as,
+
+Mantissa e Exponent
+For example, to declare a value that does not change like the classic circle constant PI, there are two ways to declare this constant
+
+By using the const keyword in a variable declaration which will reserve a storage memory
+ #include <stdio.h>
+int main() {
+const double PI = 3.14;
+printf("%f", PI);
+//PI++; // This will generate an error as constants cannot be changed
+return 0;}
+By using the #define pre-processor directive which doesn't use memory for storage and without putting a semicolon character at the end of that statement
+#include <stdio.h>
+#define PI 3.14
+int main() {
+printf("%f", PI);
+return 0;}
+
+Summary
+
+A constant is a value that doesn't change throughout the execution of a program.
+A token is the smallest unit in a program.
+A keyword is reserved words by language.
+There are total 32 keywords.
+An identifier is used to identify elements of a program.
+A variable is an identifier which is used to store a value.
+There are four commonly used data types such as int, float, char and a void.
+Each data type differs in size and range from one another.
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

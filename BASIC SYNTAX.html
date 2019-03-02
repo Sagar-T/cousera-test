@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>BASIC SYNTAX RULES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+div {
+    width: 99%;
+    border: 1px solid black;
+    margin: 2px;
+    font-size: 9px;
+    /* 100 = viewport width, as 1vw = 1/100th of that
+       Here, the body is 150% of viewport, but the container is 50% 
+       of viewport, so both parents factor  into how you want it to size.
+       Let's say you like 5vw if it were the whole width,
+       then for this container, size it at 3.75vw 
+       (5 * 1.5 [i.e. 150%]) * .5 [i.e. 50%]
+    */
+    font-size: 0.75vw; 
+}
+</style>
+
+
+</head><b>
+<body style="background-color:powderblue;">
+<div>
+<p  class="w3-xxxlarge"><b>C Language Basic Syntax Rules</p></b></br>
+<p><font size="20" style="bold">
+C language syntax specify rules for sequence of characters to be written in C language. In simple language it states how to form statements in a C language program - How should the line of code start, how it should end, where to use double quotes, where to use curly brackets etc.
+
+The rule specify how the character sequence will be grouped together, to form tokens.<div class="w3-container w3-red"> A smallest individual unit in C program is known as C Token. Tokens are either keywords, identifiers, constants, variables or any symbol which has some meaning in C language. A C program can also be called as a collection of various tokens.
+
+In the following program,</div>
+
+
+<div class="w3-panel w3-yellow "><pre>#include 
+int main()
+{
+    printf("Hello,World");
+    return 0;
+}</br></div></pre>
+if we take any one statement:</br>
+
+printf("Hello,World");</br>
+Then the tokens in this statement are→ printf, (, "Hello,World", ) and ;.
+
+So C tokens are basically the building blocks of a C program.
+</p>
+
+<p class="w3-card w3-red">Semicolon</p>
+<p>Semicolon ; is used to mark the end of a statement and beginning of another statement. Absence of semicolon at the end of any statement, will mislead the compiler to think that this statement is not yet finished and it will add the next consecutive statement after it, which may lead to compilation(syntax) error.</p>
+
+<div class="w3-panel w3-yellow"><pre>#include 
+int main()
+{
+    printf("Hello,World")
+    return 0;
+}</br></div></pre>
+In the above program, we have omitted the semicolon from the printf("...") statement, hence the compiler will think that starting from printf uptill the semicolon after return 0 statement, is a single statement and this will lead to compilation error.
+
+<p  class="w3-xxxlarge"><b>Comments</w3-xxxlarge>
+Comments are plain simple text in a C program that are not compiled by the compiler. We write comments for better understanding of the program. Though writing comments is not compulsory, but it is recommended to make your program more descriptive. It make the code more readable.
+
+There are two ways in which we can write comments.
+
+<P><pre>Using // This is used to write a single line comment.
+Using /* */: The statements enclosed within /* and */ , are used to write multi-line comments.
+Example of comments :
+// This is a comment
+
+/* This is a comment */
+
+/* This is a long 
+and valid comment */
+
+// this is not
+  a valid comment</pre></p>
+  
+<div class="w3-container w3-red"><pre>
+Some basic syntax rule for C program
+►C is a case sensitive language so all C instructions must be written in lower case letter.
+►All C statement must end with a semicolon.
+►Whitespace is used in C to describe blanks and tabs.
+►Whitespace is required between keywords and identifiers. We will learn about keywords and identifiers in the next tutorial.<p></div></pre></b>
+</div>
+</body>
+</html>
